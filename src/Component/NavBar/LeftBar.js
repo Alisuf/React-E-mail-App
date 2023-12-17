@@ -9,7 +9,7 @@ function LeftBar() {
       <nav style={{justifyContent:"center",position:'fixed',left:'0',width:'150px',height:'100%',marginTop:'10px'}}>
         <ul style={{textDecoration:'none',listStyle:'none',margin:"0",padding:'0'}}>
             <li style={{textDecoration:'none',listStyle:'none',margin:"10px"}}>
-                <button style={{borderRadius:'16px',height:'40px',border:'none',backgroundColor:'#eaf1fb',display:'flex',alignItems:'center'}}>
+                <button style={{borderRadius:'16px',height:'40px',border:'none',backgroundColor:'#eaf1fb',display:'flex',alignItems:'center',boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"}}>
              <div>   <img style={{height:"21px",width:'25px'}} src={compose} alt=''/> </div>   Compose
                 </button>
             </li>

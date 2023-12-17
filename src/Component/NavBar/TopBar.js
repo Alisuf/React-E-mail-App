@@ -17,7 +17,7 @@ function TopBar() {
             </li>
             <li>
                 <a style={{textDecoration:"none"}} href='/search'>
-                   <button style={{borderRadius:"20px",border:'none',display:'flex',alignItems:'center'}}>
+                   <button style={{borderRadius:"20px",border:'none',display:'flex',alignItems:'center',boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"}}>
                     <div><img style={{width:"30px",height:'20px'}} src={searchIcon} alt='' /></div>
                     <input  style={{alignItems:'center',borderRadius:"20px",border:'none',boxSizing:'border-box',height:'25px',width:"250px",maxWidth:"350px",backgroundColor:'#eaf1fb'}}  type='search' placeholder='search mail' />
                     </button>
