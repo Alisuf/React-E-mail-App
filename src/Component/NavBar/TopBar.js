@@ -5,11 +5,11 @@ import searchIcon from "../Assests/searchIcon.svg"
 function TopBar() {
   return (
     <div>
-      <nav style={{height:'2rem',width:'100%',alignItems:'center',display:"flex"}} >
+      <nav style={{height:'2rem',width:'100%',alignItems:'center',display:"flex",justifyContent:'space-between'}} >
       <a style={{textDecoration:"none",color:'inherit',display:'flex'}} href='/'>
-            <img src={menu} alt='' style={{width:'25px',height:'25px'}}></img>  
+            <img src={menu} alt='' style={{width:'25px',height:'25px',marginLeft:'1rem'}}></img>  
         </a>
-        <ul style={{display:"flex",position:"relative",boxSizing:'border-box',width:"100%",textDecoration:"none",listStyle:"none",alignItems:'center',justifyContent:'left',gap:'10px'}}>
+        <ul style={{display:'flex',textDecoration:"none",listStyle:"none",alignItems:'center',gap:'58px'}}>
             <li >
                 <a style={{textDecoration:"none",color:'inherit',alignItems:"center",display:'flex'}} href='/'>
                     Pigeon Mail
@@ -23,11 +23,11 @@ function TopBar() {
                     </button>
                 </a>
             </li>
-          
-        </ul>
-        <a style={{textDecoration:"none",float:'right'}} href='/profile'>
+            <a style={{textDecoration:"none",float:'right'}} href='/profile'>
             <img src={profile} alt='' style={{width: "25px", height: "25px", borderRadius: "25/ 2"}} />
         </a>
+        </ul>
+        
       </nav>
     </div>
   )

@@ -1,18 +1,30 @@
 import React from 'react'
 import TopBar from '../Component/NavBar/TopBar'
 import LeftBar from '../Component/NavBar/LeftBar'
-
+import { EMails } from '../Component/Emails/Mails'
+import moment from 'moment';
+import {  useNavigate } from 'react-router-dom';
 function HomePage() {
+
+  const navigate = useNavigate();
+
   return (
-    <div>
-      <TopBar/>
-      <LeftBar/>
-      <div style={{boxSizing:"border-box",height:'100vh',width:'85%',textAlign:'center',margin:'0',border:'none',float:'inline-end',marginTop:'10px',boxShadow:"rgba(0, 0, 0, 0.24) 0px 3px 8px",borderRadius:'16px'}}>
-        <div>
-          
+    <>
+     
+
+      <div style={{boxSizing:"border-box",height:'100vh',width:"-webkit-fit-content",border:'none',float:'inline-end',marginTop:'10px',boxShadow:"rgba(0, 0, 0, 0.24) 0px 3px 8px",top:'50px',left:'124px',position:'absolute'}}>
+          {EMails.map((item)=>{
+            return(
+         <button  style={{display:"flex",boxSizing:'border-box',border:'none',boxShadow:"rgba(0, 0, 0, 0.24) 0px 1px 0px",height:"auto",fontSize:"20px",gap:"1em",alignItems:'center',width:'85rem'}} onClick={()=>navigate(`mails/${item.id}`)}>   <div key={item.id}  style={{display:"flex",boxSizing:'border-box',border:'none',boxShadow:"rgba(0, 0, 0, 0.24) 0px 1px 0px",height:"auto",fontSize:"20px",gap:"1em",alignItems:'center',width:'85rem'}}>
+               <div style={{fontWeight:"700",padding:"7px"}}> {item.sender}</div>
+               <div style={{fontWeight:'700'}}>{item.subject}</div>
+               <div style={{fontWeight:'bold'}}>{moment(item.timestamp).format('MMMM Do YYYY, h:mm a')}</div>
+                </div></button>  
+            )
+          }
+          )}
         </div>
-      </div>
-    </div>
+        </>
   )
 }
 
