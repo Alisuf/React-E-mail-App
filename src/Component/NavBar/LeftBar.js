@@ -41,16 +41,20 @@ function LeftBar() {
             </li>
         </ul>
       </nav>
-      <Modal  isOpen={open} >
-                <>
-                <nav style={{height:'1rem'}}>Message</nav>
-                    <form>
-                      <input type='email' name='email'placeholder='To'/>
-                      <input type='text' placeholder='Subject' />
-                      <textarea></textarea>
-                    </form>
-                </>
-            </Modal></>
+      <Modal isOpen={open}>
+        <div style={{marginLeft:'1em',fontSize:'20px',fontWeight:'lighter'}}>to: </div>
+        <form>
+        <div><textarea style={{width:'700px',height:'5rem',borderRadius:'4px',border:'none',outline:'none',marginLeft:'5px',resize:'none',overflow:'hidden',fontSize:'15px',fontFamily:'sans-serif'}}></textarea></div>
+        <div style={{display:'flex',gap:'1em',position:'absolute',alignItems:'center'}}><button style={{width:'6rem',height:'2rem',borderRadius:'12px',marginLeft:'1em',backgroundColor:'#0b57d0',color:'white',border:'none'}}>send</button>
+        <div style={{alignItems:"center"}}>
+        <button style={{border:'none',outline:'none',backgroundColor:"rgb(255,255,255)"}}>
+        <img style={{height:'36px',width:'40px'}} />
+        <input style={{color:'white'}} type='file' name='file' />
+        </button>
+        </div>
+       </div>
+       </form>
+      </Modal></>
   )
 }
 
