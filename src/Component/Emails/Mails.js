@@ -3,6 +3,7 @@ export const EMails = [ {
                         "sender": "john.doe@example.com",
                         "subject": "Meeting Tomorrow",
                         "body": "Hi, let's meet tomorrow at 2 PM...",
+                        "category":'primary',
                         "timestamp": "2023-01-01T12:00:00Z",
                         "attachments": []
                         },
@@ -11,6 +12,7 @@ export const EMails = [ {
                         "sender": "john.doe@example.com",
                         "subject": "Meeting Tomorrow",
                         "body": "Hi, let's meet tomorrow at 2 PM...",
+                        "category":'primary',
                         "timestamp": "2023-01-01T12:00:00Z",
                         "attachments": []
                         },
@@ -19,6 +21,7 @@ export const EMails = [ {
                             "sender": "john.doe@example.com",
                             "subject": "Meeting Tomorrow",
                             "body": "Hi, let's meet tomorrow at 2 PM...",
+                            "category":'primary',
                             "timestamp": "2023-01-01T12:00:00Z",
                             "attachments": []
                             },
@@ -27,6 +30,8 @@ export const EMails = [ {
                             "sender": "john.doe@example.com",
                             "subject": "Meeting Tomorrow",
                             "body": "Hi, let's meet tomorrow at 2 PM...",
+                            "category":'primary',
+
                             "timestamp": "2023-01-01T12:00:00Z",
                             "attachments": []
                             },
@@ -35,6 +40,8 @@ export const EMails = [ {
                             "sender": "noreply@upstox.com",
                             "subject": "Weekly Fund Ledger for Securities",
                             "body": "Hi,Your password-protected Weekly Funds Ledger Report for 16/12/2023 is attached to this email   To access it, use your PAN (in lowercase). For e.g. if your PAN is ABCD1234X, enter the password when prompted as abcd1234x. This statement is emailed to you every week and provides details on all funds in your Trading account. For further queries, you can raise a ticket here: https://uptx.to/raise-ticket Happy Investing,Team Upstox",
+                            "category":'primary',
+
                             "timestamp": "2023-01-01T12:00:00Z",
                             "attachments": []
                             },
@@ -43,6 +50,8 @@ export const EMails = [ {
                             "sender": "john.doe@example.com",
                             "subject": "Meeting Tomorrow",
                             "body": "Hi, let's meet tomorrow at 2 PM...",
+                            "category":'primary',
+
                             "timestamp": "2023-01-01T12:00:00Z",
                             "attachments": []
                             },
@@ -51,6 +60,8 @@ export const EMails = [ {
                             "sender": "john.doe@example.com",
                             "subject": "Meeting Tomorrow",
                             "body": "Hi, let's meet tomorrow at 2 PM...",
+                            "category":'social',
+
                             "timestamp": "2023-01-01T12:00:00Z",
                             "attachments": []
                             },
@@ -59,6 +70,8 @@ export const EMails = [ {
                             "sender": "john.doe@example.com",
                             "subject": "Meeting Tomorrow",
                             "body": "Hi, let's meet tomorrow at 2 PM...",
+                            "category":'social',
+
                             "timestamp": "2023-01-01T12:00:00Z",
                             "attachments": []
                             }, 
@@ -67,6 +80,8 @@ export const EMails = [ {
                             "sender": "john.doe@example.com",
                             "subject": "Meeting Tomorrow",
                             "body": "Hi, let's meet tomorrow at 2 PM...",
+                            "category":'social',
+
                             "timestamp": "2023-01-01T12:00:00Z",
                             "attachments": []
                             },
@@ -75,100 +90,122 @@ export const EMails = [ {
                         "sender": "john.doe@example.com",
                         "subject": "Meeting Tomorrow",
                         "body": "Hi, let's meet tomorrow at 2 PM...",
+                        "category":'social',
+
                         "timestamp": "2023-01-01T12:00:00Z",
                         "attachments": []
                         },
                         {
-                            "id": 10,
+                            "id": 11,
                             "sender": "john.doe@example.com",
                             "subject": "Meeting Tomorrow",
                             "body": "Hi, let's meet tomorrow at 2 PM...",
+                            "category":'social',
+
                             "timestamp": "2023-01-01T12:00:00Z",
                             "attachments": []
                             },
                             {
-                                "id": 10,
+                                "id": 12,
                                 "sender": "john.doe@example.com",
                                 "subject": "Meeting Tomorrow",
                                 "body": "Hi, let's meet tomorrow at 2 PM...",
+                                "category":'social',
+
                                 "timestamp": "2023-01-01T12:00:00Z",
                                 "attachments": []
                                 },
                                 {
-                                    "id": 10,
+                                    "id": 13,
                                     "sender": "john.doe@example.com",
                                     "subject": "Meeting Tomorrow",
                                     "body": "Hi, let's meet tomorrow at 2 PM...",
+                                    "category":'promotional',
+
                                     "timestamp": "2023-01-01T12:00:00Z",
                                     "attachments": []
                                     },
                                     {
-                                        "id": 10,
+                                        "id": 14,
                                         "sender": "john.doe@example.com",
                                         "subject": "Meeting Tomorrow",
                                         "body": "Hi, let's meet tomorrow at 2 PM...",
+                                        "category":'promotional',
+
                                         "timestamp": "2023-01-01T12:00:00Z",
                                         "attachments": []
                                         },
                                         {
-                                            "id": 10,
+                                            "id": 15,
                                             "sender": "john.doe@example.com",
                                             "subject": "Meeting Tomorrow",
                                             "body": "Hi, let's meet tomorrow at 2 PM...",
+                                            "category":'promotional',
+
                                             "timestamp": "2023-01-01T12:00:00Z",
                                             "attachments": []
                                             },
                                             {
-                                                "id": 10,
+                                                "id": 16,
                                                 "sender": "john.doe@example.com",
                                                 "subject": "Meeting Tomorrow",
                                                 "body": "Hi, let's meet tomorrow at 2 PM...",
+                                                "category":'promotional',
+
                                                 "timestamp": "2023-01-01T12:00:00Z",
                                                 "attachments": []
                                                 },
                                                 {
-                                                    "id": 10,
+                                                    "id": 17,
                                                     "sender": "john.doe@example.com",
                                                     "subject": "Meeting Tomorrow",
                                                     "body": "Hi, let's meet tomorrow at 2 PM...",
+                                                    "category":'promotional',
+
                                                     "timestamp": "2023-01-01T12:00:00Z",
                                                     "attachments": []
                                                     },
                                                     {
-                                                        "id": 10,
+                                                        "id": 18,
                                                         "sender": "john.doe@example.com",
                                                         "subject": "Meeting Tomorrow",
                                                         "body": "Hi, let's meet tomorrow at 2 PM...",
+                                                        "category":'promotional',
+
                                                         "timestamp": "2023-01-01T12:00:00Z",
                                                         "attachments": []
                                                         },
                                                         {
-                                                            "id": 10,
+                                                            "id": 19,
                                                             "sender": "john.doe@example.com",
                                                             "subject": "Meeting Tomorrow",
                                                             "body": "Hi, let's meet tomorrow at 2 PM...",
+                                                            "category":'promotional',
                                                             "timestamp": "2023-01-01T12:00:00Z",
                                                             "attachments": []
                                                             },
                                                             {
-                                                                "id": 10,
+                                                                "id":20,
                                                                 "sender": "john.doe@example.com",
                                                                 "subject": "Meeting Tomorrow",
                                                                 "body": "Hi, let's meet tomorrow at 2 PM...",
+                                                                "category":'promotional',
                                                                 "timestamp": "2023-01-01T12:00:00Z",
                                                                 "attachments": []
                                                                 }, {
-                                                                    "id": 10,
+                                                                    "id": 21,
                                                                     "sender": "john.doe@example.com",
                                                                     "subject": "Meeting Tomorrow",
                                                                     "body": "Hi, let's meet tomorrow at 2 PM...",
+                                                                    "category":'promotional',
                                                                     "timestamp": "2023-01-01T12:00:00Z",
                                                                     "attachments": []
                                                                     }, {
-                                                                        "id": 10,
+                                                                        "id": 22,
                                                                         "sender": "john.doe@example.com",
                                                                         "subject": "Meeting Tomorrow",
                                                                         "body": "Hi, let's meet tomorrow at 2 PM...",
+                                                                        "category":'promotional',
                                                                         "timestamp": "2023-01-01T12:00:00Z",
                                                                         "attachments": []
                                                                         }]

@@ -7,7 +7,7 @@ const Modal = ({ isOpen, onClose, children }) => {
 
 	return (
 			
-			<div  style={{boxSizing:"border-box",height:'25vh',width:"45rem",border:'none',float:'inline-end',marginTop:'9em',boxShadow:"rgba(0, 0, 0, 0.24) 0px 3px 20px",marginLeft:'6em',position:'absolute',wordWrap:'break-word',borderRadius:'16px'}}>
+			<div  style={{boxSizing:"border-box",height:'27rem',width:"25rem",border:'none',float:'inline-end',boxShadow:"rgba(0, 0, 0, 0.24) 0px 3px 20px",marginLeft:'6em',position:'fixed',wordWrap:'break-word',backgroundColor:"white",zIndex:'3',bottom:'0'}}>
 
 				{children}
 			</div>

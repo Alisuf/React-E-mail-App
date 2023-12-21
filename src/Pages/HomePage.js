@@ -12,7 +12,7 @@ function HomePage() {
     <>
      
 
-      <div style={{boxSizing:"border-box",height:'100vh',width:"-webkit-fit-content",border:'none',float:'inline-end',marginTop:'10px',boxShadow:"rgba(0, 0, 0, 0.24) 0px 3px 8px",top:'50px',left:'124px',position:'absolute'}}>
+      <div style={{boxSizing:"border-box",height:'50em',width:"-webkit-fit-content",border:'none',float:'inline-end',marginTop:'10px',boxShadow:"rgba(0, 0, 0, 0.24) 0px 3px 8px",top:'50px',left:'124px',position:'absolute'}}>
           {EMails.map((item)=>{
             return(
          <button  style={{display:"flex",boxSizing:'border-box',border:'none',boxShadow:"rgba(0, 0, 0, 0.24) 0px 1px 0px",height:"auto",fontSize:"20px",gap:"1em",alignItems:'center',width:'75rem'}} onClick={()=>navigate(`mails/${item.id}`)}>   <div key={item.id}  style={{display:"flex",boxSizing:'border-box',border:'none',boxShadow:"rgba(0, 0, 0, 0.24) 0px 1px 0px",height:"auto",fontSize:"20px",gap:"1em",alignItems:'center',width:'75rem',justifyContent:'space-between'}}>
