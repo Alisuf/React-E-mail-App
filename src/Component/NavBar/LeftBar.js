@@ -11,6 +11,10 @@ function LeftBar() {
   const handleOpen = ()=>{
     setOpen(true)
   }
+
+  const handleClose = ()=>{
+    setOpen(false)
+  }
 const [post,setPost]=useState({
   sender:'',
 title:'',
@@ -60,16 +64,21 @@ function handleSubmit(event){
       </nav>
       <Modal isOpen={open}>
         <div style={{height:"auto",fontWeight:'500',paddingBottom:"10px",paddingTop:"10px",marginLeft:'16px',backgroundColor:"#f2f6fc"}}>Message</div>
-      <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
         <input style={{fontSize:'20px',fontWeight:'lighter',boxShadow:'inset 0 -1px 0 0 rgba(100,121,143,1)',border:"none",borderBottom:"inset 0 -1px 0 0 rgba(100,121,143,0.122)",outline:"none",width:'93%',marginLeft:'16px'}} placeholder="to" type='email' name='sender' onChange={handleInput}/>
         <input style={{fontSize:'20px',fontWeight:'lighter',boxShadow:'inset 0 -1px 0 0 rgba(100,121,143,1)',border:"none",borderBottom:"inset 0 -1px 0 0 rgba(100,121,143,0.122)",outline:"none",width:'93%',marginLeft:'16px'}} placeholder="subject" type='name' name='title' onChange={handleInput}/>
-        <div><textarea name='body' style={{marginLeft:'16px',width:'382px',height:'17rem',borderRadius:'4px',border:'none',outline:'none',resize:'none',overflow:'hidden',fontSize:'15px',fontFamily:'sans-serif'}}></textarea></div>
+        <div>
+          <textarea name='body' style={{marginLeft:'16px',width:'382px',height:'17rem',borderRadius:'4px',border:'none',outline:'none',resize:'none',overflow:'hidden',fontSize:'15px',fontFamily:'sans-serif'}}>
+          </textarea>
+        </div>
         <div style={{display:'flex',gap:'1em',position:'absolute',alignItems:'center',bottom:'6px'}}>
-          <button style={{width:'6rem',height:'2rem',borderRadius:'12px',marginLeft:'1em',backgroundColor:'#0b57d0',color:'white',border:'none'}}>send</button>
+          <button style={{width:'6rem',height:'2rem',borderRadius:'12px',marginLeft:'1em',backgroundColor:'#0b57d0',color:'white',border:'none'}}>
+            send
+          </button>
         <div style={{alignItems:"center"}}>
-        <button style={{border:'none',outline:'none',backgroundColor:"rgb(255,255,255)"}}>
-        <img style={{height:'36px',width:'40px'}} />
-        </button>
+          <button style={{border:'none',outline:'none',backgroundColor:"rgb(255,255,255)"}}>
+          <img style={{height:'36px',width:'40px'}} />
+          </button>
         </div>
        </div>
        </form>

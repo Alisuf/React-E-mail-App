@@ -9,10 +9,10 @@ function TopBar() {
       <a style={{textDecoration:"none",color:'inherit',display:'flex'}} href='/'>
             <img src={menu} alt='' style={{width:'25px',height:'25px',marginLeft:'1rem'}}></img>  
         </a>
-        <ul style={{display:'flex',textDecoration:"none",listStyle:"none",alignItems:'center',gap:'58px'}}>
+        <ul style={{display:'flex',textDecoration:"none",listStyle:"none",alignItems:'center',gap:'2em'}}>
             <li >
-                <a style={{textDecoration:"none",color:'inherit',alignItems:"center",display:'flex'}} href='/'>
-                    Pigeon Mail
+                <a style={{textDecoration:"none",color:'inherit',alignItems:"center",display:'flex',width:"10em"}} href='/'>
+                    React E-mail App
                 </a>
             </li>
             <li>
