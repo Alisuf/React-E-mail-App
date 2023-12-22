@@ -36,6 +36,7 @@ const filterItems = () => {
     setFilteredItems([...Mails]);
   }
 };
+console.log(filteredItems)
   return (
     <>
      
@@ -43,8 +44,8 @@ const filterItems = () => {
       <div style={{boxSizing:"border-box",height:'50em',width:"-webkit-fit-content",border:'none',float:'inline-end',marginTop:'10px',boxShadow:"rgba(0, 0, 0, 0.24) 0px 3px 8px",top:'50px',left:'124px',position:'absolute'}}>
 
        <div> <input style={{width:'75rem'}} type='text' onChange={(e)=>setData(e.target.value)} placeholder='Search'/></div>
-         <div style={{display:'flex',justifyContent:"space-around",height:'2em',paddingTop:'10px'}}>{filter.map((category,id)=>(
-          <button onClick={()=>handleFilterButtonClick(category)}  className={`button ${
+         <div style={{display:'flex',justifyContent:"space-around",height:'2em',paddingTop:'10px',backgroundColor:'#f2f6fc',}}>{filter.map((category,id)=>(
+          <button style={{backgroundColor:'#f2f6fc',border:'none',boxShadow:'rgba(0, 0, 0, 0.24) 0px 3px 8px',borderRadius:'16px'}} onClick={()=>handleFilterButtonClick(category)}  className={`button ${
             selectedFilters?.includes(category) ? "active" : ""
           }`}
           key={`filters-${id}`}>{category}</button>
