@@ -5,7 +5,7 @@ import sent from "../Assests/sent.svg"
 import draft from "../Assests/draft.svg"
 import Modal from '../Modal/Modal'
 import axios from 'axios';
-import Mails from "../Emails/Mails"
+import Mails from "../Assests/Mails.json"
 function LeftBar() {
   const [open,setOpen]=useState(false);
   const handleOpen = ()=>{
@@ -23,7 +23,7 @@ const handleInput = (event) =>{
 function handleSubmit(event){
   event.preventDefault()
   console.log(post)
-  axios.post('https://jsonplaceholder.typicode.com/posts',{post})
+  axios.post('../Assests/Mail.json',{post})
   .then(response=>console.log(response))
   .catch(err=>console.log(err))
 }

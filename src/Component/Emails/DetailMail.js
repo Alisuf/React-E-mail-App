@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { EMails } from './Mails'
+import Mails from "../Assests/Mails.json"
 import { useParams } from 'react-router-dom'
 import profile from "../Assests/profile.png"
 import Reply from '../Modal/Reply'
@@ -21,7 +21,7 @@ function handleUpload () {
  formData.append('file',file)
 }
 const {id} = useParams();
-const DetailMail = EMails?.find( item => item.id===Number(id))
+const DetailMail = Mails?.find( item => item.id===Number(id))
   return (
     
       <div style={{boxSizing:"border-box",height:'80%',width:"55rem",border:'none',float:'inline-end',marginTop:'10px',boxShadow:"rgba(0, 0, 0, 0.24) 0px 3px 8px",top:'50px',left:'124px',position:'absolute',wordWrap:'break-word'}}>
