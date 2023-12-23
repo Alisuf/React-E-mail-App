@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import Mails from "../Component/Assests/Mails.json"
 import moment from 'moment';
 import {  useNavigate } from 'react-router-dom';
-import axios from 'axios'
 
 function HomePage() {
 
